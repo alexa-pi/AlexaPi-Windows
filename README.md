@@ -1,4 +1,8 @@
-# AlexaPi Windows Branch
+# AlexaPi Windows 
 
-## Caution: this is a developping branch, not to be merged or used!
-## See [here](https://github.com/alexa-pi/AlexaPi-Windows) to get AlexaPi-Windows
+## IN PROGRESS
+
+## Dependencies
+
+* [Python](https://www.python.org/downloads/windows/) (tested with 3.6, needs pip)
+* [Visual C++ 2015 Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
