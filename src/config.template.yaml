@@ -32,12 +32,12 @@ sound:
 
 # Amazon Alexa settings
 alexa:
-  Client_ID: "***REMOVED***"
-  Client_Secret: "***REMOVED***"
-  Device_Type_ID: "***REMOVED***"
-  Security_Profile_Description: "***REMOVED***"
-  Security_Profile_ID: "***REMOVED***"
-  refresh_token: "***REMOVED***"
+  Client_ID: ""
+  Client_Secret: ""
+  Device_Type_ID: ""
+  Security_Profile_Description: ""
+  Security_Profile_ID: ""
+  refresh_token: 
 
 # See https://github.com/alexa-pi/AlexaPi/wiki/Triggers for the description of these options
 triggers:
