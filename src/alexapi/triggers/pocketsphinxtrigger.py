@@ -43,7 +43,7 @@ class PocketsphinxTrigger(BaseTrigger):
 
 		# Hide the VERY verbose logging information when not in debug
 		if logging.getLogger('alexapi').getEffectiveLevel() != logging.DEBUG:
-			ps_config.set_string('-logfn', '/dev/null')
+			ps_config.set_string('-logfn', 'nul')
 
 		# Process audio chunk by chunk. On keyword detected perform action and restart search
 		self._decoder = Decoder(ps_config)
