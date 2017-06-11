@@ -3,25 +3,31 @@ title AlexaPi for Windows Installation
 cls
 
 SET mypath=%~dp0
-SET path=%mypath:~0,-8%
+SET apath=%mypath:~0,-8%
+SET path=%path%;%mypath%\swigwin
 
 echo -------------------------------------------
 echo Welcome in AlexaPi installation for Windows
 echo -------------------------------------------
 
-set /p pythonpath=Enter your Python path: 
-
 echo Installing dependencies:
-%pythonpath%\Scripts\pip.exe install -r %path%requirements.txt
+
+python -m pip install -r %apath%requirements.txt
 
 pause
 cls
 
-cd ..
+cd %apath%
 
 copy config.template.yaml config.yaml
 
-%pythonpath%\python.exe auth_web.py
+echo ######################################################################################################
+echo IMPORTANT NOTICE:
+echo You HAVE TO set up Amazon keys in the config.yaml file now
+echo ######################################################################################################
+pause
+
+start python.exe auth_web.py
 
 echo =====
 echo Done!
@@ -30,7 +36,7 @@ pause
 cls
 echo ######################################################################################################
 echo IMPORTANT NOTICE:
-echo You HAVE TO set up Amazon keys and maybe your system audio.
+echo You may HAVE TO set up your system audio.
 echo See on our wiki
 echo ######################################################################################################
 pause

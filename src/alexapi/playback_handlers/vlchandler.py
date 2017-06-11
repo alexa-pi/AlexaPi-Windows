@@ -35,26 +35,26 @@ class VlcHandler(BaseHandler):
 
 		parametersSpeech = parametersCommon
 
-		if self.__config['sound']['output']:
-			parametersSpeech.append('--aout=' + self.__config['sound']['output'])
+		#if self.__config['sound']['output']:
+			#parametersSpeech.append('--aout=' + self.__config['sound']['output'])
 
-			if self.__config['sound']['output_device']:
-				parametersSpeech.append('--alsa-audio-device=' + self.__config['sound']['output_device'])
+			#if self.__config['sound']['output_device']:
+				#parametersSpeech.append('--alsa-audio-device=' + self.__config['sound']['output_device'])
 
 		self.vlc_instance = vlc.Instance(*parametersSpeech)
 		self.player = self.vlc_instance.media_player_new()
 
 		self.media_vlc_instance = self.vlc_instance
 		self.media_player = self.player
-		if self.__config['sound']['media_output']:
-			parametersMedia = parametersCommon
-			parametersMedia.append('--aout=' + self.__config['sound']['media_output'])
+		#if self.__config['sound']['media_output']:
+			#parametersMedia = parametersCommon
+			#parametersMedia.append('--aout=' + self.__config['sound']['media_output'])
 
-			if self.__config['sound']['media_output_device']:
-				parametersMedia.append('--alsa-audio-device=' + self.__config['sound']['media_output_device'])
+			#if self.__config['sound']['media_output_device']:
+			#	parametersMedia.append('--alsa-audio-device=' + self.__config['sound']['media_output_device'])
 
-			self.media_vlc_instance = vlc.Instance(*parametersMedia)
-			self.media_player = self.media_vlc_instance.media_player_new()
+			#self.media_vlc_instance = vlc.Instance(*parametersMedia)
+			#self.media_player = self.media_vlc_instance.media_player_new()
 
 		if self.__config['sound']['default_volume']:
 			self.volume = self.__config['sound']['default_volume']
@@ -68,8 +68,9 @@ class VlcHandler(BaseHandler):
 		if (item.audio_type == PlaybackAudioType.MEDIA):
 			vlcInstance = self.media_vlc_instance
 			player = self.media_player
-
-		media = vlcInstance.media_new(item.url)
+		
+		url = item.url.replace("file://", "")
+		media = vlcInstance.media_new(url)
 		player.set_media(media)
 
 		volume = self.volume

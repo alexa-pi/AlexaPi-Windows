@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-# encoding=latin-1  
 
 import importlib
 import os
@@ -26,9 +25,6 @@ import alexapi.capture
 import alexapi.triggers as triggers
 from alexapi.exceptions import ConfigurationException
 from alexapi.constants import RequestType, PlayerActivity
-
-reload(sys)  
-sys.setdefaultencoding('latin1')
 
 logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s')
 coloredlogs.DEFAULT_FIELD_STYLES = {
