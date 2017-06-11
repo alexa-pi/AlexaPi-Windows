@@ -1,6 +1,6 @@
 # AlexaPi Windows 
 
-## IN PROGRESS
+# NOW WORKING!!!
 
 ## Dependencies
 
@@ -8,3 +8,9 @@
 * [Visual C++ 2015 Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools)
 * _Swig_ (Installed with **AlexaPi-Windows**)
 * [VLC](http://www.videolan.org/vlc/download-windows.html)
+
+## How to install
+
+See [here](https://github.com/alexa-pi/AlexaPi-Windows/wiki/Installing)
+
+## (Original project)[https://github.com/alexa-pi/AlexaPi]
