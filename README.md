@@ -11,7 +11,7 @@
 
 ## How to install
 
-See [here](https://github.com/alexa-pi/AlexaPi-Windows/wiki/Installing)
+See our wiki [here](https://github.com/alexa-pi/AlexaPi-Windows/wiki/Installing)
 
 ## Original project: https://github.com/alexa-pi/AlexaPi
 
