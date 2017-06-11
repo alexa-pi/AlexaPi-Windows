@@ -32,12 +32,12 @@ sound:
 
 # Amazon Alexa settings
 alexa:
-  Client_ID: "amzn1.application-oa2-client.27cda2636ded4cb691b10133b3c75e9c"
-  Client_Secret: "ccc56a200fa2ed05ab32196868131de92f7f3fa64b1614d95e937a18c99d818b"
-  Device_Type_ID: "AlexaHerve"
-  Security_Profile_Description: "AlexaHerve"
-  Security_Profile_ID: "amzn1.application.a6ea67b75d0244e0baf844abe461d746"
-  refresh_token: "Atzr|IwEBIAv3gN4hnbjlaixQz3uM-HQJwzK4Ztt6e21diebYmcRIbyGjT_cRUXAEN_yqS6cUw05BhpUeI5D37-Xs2IaufqQIPTuszwHoJpOuzV9Sn-PjPU4jZZQLiR7AUaBAhKbL1W8E3-V6T-mEWOSweXW_wL2ExF1wjOBeIiAhQAx82SpRni9yKzYr-p0qcOeFKo12fh4vTAynlfy79CcQtWivxL76NexCugjeDqXVGns9dMrNlIHPulCNOeCQcCydaVs8_ws9hZXbwnVZlCtFRx1PulHIOa2xi_XzfL6CYSQ7tVgf9qU8WaPmcSHpeXYvRZNnQhy0c5miHPHEN6MzDiOSFAABzwaSc9tDpMT0VTgSJatenygQcGeXmO4_fErJ7VRw7hlRc0MgfV5zkeffz-6SDH4qK8fBui56MgPRVvstAln-qsGUkLBSLogJrO0K9MGd_l4ljG2s8-2bB63A3LGwHMNrawXnbngSa_aH5LG_X2o7lThXq4PK5U_svXbSNhVYstocg9_-XgrATuHlmFzdf_W0rRJx_ttdZj41mvKNGymKkA"
+  Client_ID: ""
+  Client_Secret: ""
+  Device_Type_ID: ""
+  Security_Profile_Description: ""
+  Security_Profile_ID: ""
+  refresh_token: 
 
 # See https://github.com/alexa-pi/AlexaPi/wiki/Triggers for the description of these options
 triggers:
